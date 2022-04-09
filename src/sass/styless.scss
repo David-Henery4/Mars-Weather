@@ -15,13 +15,14 @@
 
 body {
   // background-color:red;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .body-content{
   height: 100vh;
   width: 100vw;
-  overflow:hidden;
+  // overflow:hidden;
+  overflow-x: hidden;
 }
 
 .mars__vid {
