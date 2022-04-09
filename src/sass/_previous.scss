@@ -1,0 +1,54 @@
+.prev__week{
+    @extend .current__day;
+    display: flex;
+    justify-content: space-between;
+}
+
+.week__header{
+    @extend .curr__header;
+}
+
+.week__block{
+    @extend .details__block;
+    margin: 0;
+}
+
+.week__details--wrap{
+    @extend .curr__details--wrap;
+    flex-direction: column;
+    padding: 0 10px;
+    .top{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    }
+    .line{
+        background-color: $primary-color;
+        height: 10px;
+        width: 2px;
+        position: absolute;
+        right: 50%;
+    }
+    .bott{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50%;
+        width: 100%;
+    }
+}
+
+.prev__week--btns{
+    @extend .current__btns;
+}
+
+// Media Queries
+
+@media (min-width:375px){
+    .week__details--wrap{
+        padding: 0 20px;
+    }
+}

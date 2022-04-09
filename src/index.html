@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+    />
+    <link rel="stylesheet" href="/src/sass/styless.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,500&display=swap" rel="stylesheet">
+
+    <script defer type="module" src="/src/js/main.js"></script>
+    <title>Mars Weather</title>
+  </head>
+  <body>
+    <video
+      class="mars__vid"
+      src="/src/background-vid/MarsBackground.mp4"
+      loop
+      muted
+      autoplay
+    ></video>
+    <div class="overlay"></div>
+    <header id="head">
+      <!-- Error Message -->
+      <div class="error__container hide__errorMsg">
+        <!-- <h4>Sorry</h4>
+        <p>We are having problems recieving weather data at the moment. Please try again later</p> -->
+      </div>
+      <!-- STARTER MENU -->
+      <div class="starter__menu">
+        <h1>Whats the weather like on mars?</h1>
+        <div class="starter__btns">
+          <button data-btn="1" class="start__btn--1">
+            Current weather report
+          </button>
+          <button data-btn="2" class="start__btn--2">
+            Previous week report
+          </button>
+        </div>
+      </div>
+
+      <!---->
+
+      <!-- CURRENT DAY UI -->
+      <div class="current__day">
+
+        
+        <!--CURRENT HEADER -->
+        <div id="curr-date" class="curr__header">
+          <h4>Sol 3365</h4>
+          <h4>2/2/22</h4>
+        </div>
+
+        <!-- CURRENT DETAILS BLOCK -->
+        <div class="details__block">
+          <!-- detail block 1 -->
+          <div id="max-air" class="curr__details--wrap wrap__left">
+            <p>Max Air Temp:</p>
+            <p>-3C</p>
+          </div>
+
+          <!-- detail block 2 -->
+          <div id="min-air" class="curr__details--wrap wrap__right">
+            <p>Min Air Temp:</p>
+            <p>-3C</p>
+          </div>
+
+          <!-- detail block 3 -->
+          <div id="max-sur" class="curr__details--wrap wrap__left">
+            <p>Max Surface Temp:</p>
+            <p>-3C</p>
+          </div>
+
+          <!-- detail block 4 -->
+          <div id="min-sur" class="curr__details--wrap wrap__right">
+            <p>Min Surface Temp:</p>
+            <p>-3C</p>
+          </div>
+
+          <!-- detail block 5 -->
+          <div id="weath" class="curr__details--wrap wrap__left">
+            <p>Weather:</p>
+            <p>Sunny</p>
+          </div>
+
+          <!-- detail block 6 -->
+          <div id="seas" class="curr__details--wrap wrap__right">
+            <p>Season:</p>
+            <p>Winter</p>
+          </div>
+
+          <!-- detail block 7 -->
+          <div id="sunset" class="curr__details--wrap wrap__left">
+            <p>Sunset:</p>
+            <p>16:00</p>
+          </div>
+
+          <!-- detail block 8 -->
+          <div id="sunrise" class="curr__details--wrap wrap__right">
+            <p>Sunrise:</p>
+            <p>05:00</p>
+          </div>
+        </div>
+
+        <!-- CURRENT BUTTONS -->
+        <div class="current__btns">
+          <button class="prev__btn">Prev Week</button>
+          <button class="fah__btn">Fahrenheit/Celsius</button>
+          <button class="start__btn">Back To Start</button>
+        </div>
+      </div>
+
+      <!---->
+
+      <!-- PREVIOUS WEEK SECTION -->
+      <div class="prev__week">
+        <!-- Week Header -->
+        <div class="week__header">
+          <h4>Previous Week</h4>
+        </div>
+
+        <!-- Week details -->
+        <div class="week__block">
+          <!-- Week 1 -->
+          <div class="week__details--wrap wrap__right">
+            <div class="top">
+              <h4>Sol 3365 - 2/2/22</h4>
+            </div>
+            <div class="bott">
+              <p>Max-Temp: -30</p>
+              <div class="line"></div>
+              <p>Min-Temp: -12</p>
+            </div>
+          </div>
+
+          <!-- Week 2 -->
+          <div class="week__details--wrap wrap__left">
+            <div class="top">
+              <h4>Sol 3365 - 2/2/22</h4>
+            </div>
+            <div class="bott">
+              <p>Max-Temp: -30</p>
+              <div class="line"></div>
+              <p>Min-Temp: -12</p>
+            </div>
+          </div>
+
+          <!-- Week 3 -->
+          <div class="week__details--wrap wrap__right">
+            <div class="top">
+              <h4>Sol 3365 - 2/2/22</h4>
+            </div>
+            <div class="bott">
+              <p>Max-Temp: -30</p>
+              <div class="line"></div>
+              <p>Min-Temp: -12</p>
+            </div>
+          </div>
+
+          <!-- Week 4 -->
+          <div class="week__details--wrap wrap__left">
+            <div class="top">
+              <h4>Sol 3365 - 2/2/22</h4>
+            </div>
+            <div class="bott">
+              <p>Max-Temp: -30</p>
+              <div class="line"></div>
+              <p>Min-Temp: -12</p>
+            </div>
+          </div>
+
+          <!-- Week 5 -->
+          <div class="week__details--wrap wrap__right">
+            <div class="top">
+              <h4>Sol 3365 - 2/2/22</h4>
+            </div>
+            <div class="bott">
+              <p>Max-Temp: -30</p>
+              <div class="line"></div>
+              <p>Min-Temp: -12</p>
+            </div>
+          </div>
+
+          <!-- Week 6 -->
+          <div class="week__details--wrap wrap__left">
+            <div class="top">
+              <h4>Sol 3365 - 2/2/22</h4>
+            </div>
+            <div class="bott">
+              <p>Max-Temp: -30</p>
+              <div class="line"></div>
+              <p>Min-Temp: -12</p>
+            </div>
+          </div>
+
+          <!-- Week 7 -->
+          <div class="week__details--wrap wrap__right">
+            <div class="top">
+              <h4>Sol 3365 - 2/2/22</h4>
+            </div>
+            <div class="bott">
+              <p>Max-Temp: -30</p>
+              <div class="line"></div>
+              <p>Min-Temp: -12</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="prev__week--btns">
+          <button class="curr__btn">Current Weather</button>
+          <button class="fah__btn">Fahrenheit/Celsius</button>
+          <button class="start__btn">Back To Start</button>
+        </div>
+      </div>
+    </header>
+    <footer>
+      <div class="foot__text--wrap">
+        <p>Data come thanks to  the  Curiosity Rover. It's currently taking weather measurements at Gale Crater in the southern hemisphere of Mars.</p>
+      </div>
+    </footer>
+  </body>
+</html>

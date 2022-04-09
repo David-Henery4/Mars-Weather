@@ -1,0 +1,38 @@
+footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 10%;
+    max-height: 50px;
+    text-align: center;
+    .foot__text--wrap{
+        width: 100%;
+        height: 100%;
+        padding: 0 5%;
+        p{
+        color: $primary-color;
+        font-size: 0.6rem;
+        }
+    }
+}
+
+@media (min-width: 650px){
+    footer{
+        .foot__text--wrap{
+            p{
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+@media (min-width: 1000px){
+    footer{
+        .foot__text--wrap{
+            p{
+                font-size: 0.9rem;
+            }
+        }
+    }
+}

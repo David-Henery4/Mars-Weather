@@ -1,0 +1,48 @@
+@import "variables";
+@import "starter";
+@import "current";
+@import "previous";
+@import "errMsg";
+@import "footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $primary-color;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  // background-color:red;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.mars__vid {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1200;
+  background-color: $overlay-color;
+  transition: $transition-value;
+}
+
+// Active overlay
+.active__overlay{
+  background-color:$overlay-active;
+  transition: $transition-value;
+}
