@@ -16,19 +16,20 @@
     <title>Mars Weather</title>
   </head>
   <body>
-    <video
+    <div class="body-content">
+      <video
       class="mars__vid"
       src="/src/background-vid/MarsBackground.mp4"
       loop
       muted
       autoplay
-    ></video>
-    <div class="overlay"></div>
-    <header id="head">
+      ></video>
+      <div class="overlay"></div>
+      <header id="head">
       <!-- Error Message -->
       <div class="error__container hide__errorMsg">
         <!-- <h4>Sorry</h4>
-        <p>We are having problems recieving weather data at the moment. Please try again later</p> -->
+          <p>We are having problems recieving weather data at the moment. Please try again later</p> -->
       </div>
       <!-- STARTER MENU -->
       <div class="starter__menu">
@@ -42,19 +43,19 @@
           </button>
         </div>
       </div>
-
+      
       <!---->
-
+      
       <!-- CURRENT DAY UI -->
       <div class="current__day">
-
+        
         
         <!--CURRENT HEADER -->
         <div id="curr-date" class="curr__header">
           <h4>Sol 3365</h4>
           <h4>2/2/22</h4>
         </div>
-
+        
         <!-- CURRENT DETAILS BLOCK -->
         <div class="details__block">
           <!-- detail block 1 -->
@@ -68,44 +69,44 @@
             <p>Min Air Temp:</p>
             <p>-3C</p>
           </div>
-
+          
           <!-- detail block 3 -->
           <div id="max-sur" class="curr__details--wrap wrap__left">
             <p>Max Surface Temp:</p>
             <p>-3C</p>
           </div>
-
+          
           <!-- detail block 4 -->
           <div id="min-sur" class="curr__details--wrap wrap__right">
             <p>Min Surface Temp:</p>
             <p>-3C</p>
           </div>
-
+          
           <!-- detail block 5 -->
           <div id="weath" class="curr__details--wrap wrap__left">
             <p>Weather:</p>
             <p>Sunny</p>
           </div>
-
+          
           <!-- detail block 6 -->
           <div id="seas" class="curr__details--wrap wrap__right">
             <p>Season:</p>
             <p>Winter</p>
           </div>
-
+          
           <!-- detail block 7 -->
           <div id="sunset" class="curr__details--wrap wrap__left">
             <p>Sunset:</p>
             <p>16:00</p>
           </div>
-
+          
           <!-- detail block 8 -->
           <div id="sunrise" class="curr__details--wrap wrap__right">
             <p>Sunrise:</p>
             <p>05:00</p>
           </div>
         </div>
-
+        
         <!-- CURRENT BUTTONS -->
         <div class="current__btns">
           <button class="prev__btn">Prev Week</button>
@@ -113,7 +114,7 @@
           <button class="start__btn">Back To Start</button>
         </div>
       </div>
-
+      
       <!---->
 
       <!-- PREVIOUS WEEK SECTION -->
@@ -122,7 +123,7 @@
         <div class="week__header">
           <h4>Previous Week</h4>
         </div>
-
+        
         <!-- Week details -->
         <div class="week__block">
           <!-- Week 1 -->
@@ -136,7 +137,7 @@
               <p>Min-Temp: -12</p>
             </div>
           </div>
-
+          
           <!-- Week 2 -->
           <div class="week__details--wrap wrap__left">
             <div class="top">
@@ -148,7 +149,7 @@
               <p>Min-Temp: -12</p>
             </div>
           </div>
-
+          
           <!-- Week 3 -->
           <div class="week__details--wrap wrap__right">
             <div class="top">
@@ -160,7 +161,7 @@
               <p>Min-Temp: -12</p>
             </div>
           </div>
-
+          
           <!-- Week 4 -->
           <div class="week__details--wrap wrap__left">
             <div class="top">
@@ -172,7 +173,7 @@
               <p>Min-Temp: -12</p>
             </div>
           </div>
-
+          
           <!-- Week 5 -->
           <div class="week__details--wrap wrap__right">
             <div class="top">
@@ -222,5 +223,7 @@
         <p>Data come thanks to  the  Curiosity Rover. It's currently taking weather measurements at Gale Crater in the southern hemisphere of Mars.</p>
       </div>
     </footer>
+  </div>
   </body>
-</html>
+  </html>
+  
