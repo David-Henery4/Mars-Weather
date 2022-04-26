@@ -3,7 +3,8 @@
 
 This is a minimalist style mars weather web app that shows users the latest weather data, coming from the mars curiosity rover on mars.
 
-The design is very flexable and has a video background of mars rotating. It also works on all screen sizes from mobile to desktop.
+The design is very flexable and has a video background of mars rotating. It also works on all screen sizes from mobile to desktop. If you would like to check it out follow this link:
+https://mars-tiempo.netlify.app
 
 ## Features
 
